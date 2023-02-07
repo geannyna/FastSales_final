@@ -28,12 +28,12 @@ public function destroy ($id){
     $ad->delete();
     return redirect()->back()->withMessage(['type' => 'success', 'text' => 'Anuncio borrado']);
 }
-public function update ($id){
-    $ad = Ad::find($id);
-    //dd($ad);
-    $ad->update();
-    return redirect()->back()->withMessage(['type' => 'success', 'text' => 'Anuncio modificado']);
-}
+// public function update ($id){
+//     $ad = Ad::find($id);
+//     dd($ad);
+//     $ad->update();
+//     return redirect()->back()->withMessage(['type' => 'success', 'text' => 'Anuncio modificado']);
+// }
 
 // public function edit (Ad $ad){
 //    //dd($ad->image->getUrl(400,300));
