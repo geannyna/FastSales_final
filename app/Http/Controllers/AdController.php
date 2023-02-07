@@ -35,8 +35,8 @@ public function update ($id){
     return redirect()->back()->withMessage(['type' => 'success', 'text' => 'Anuncio modificado']);
 }
 
-public function edit (Ad $ad){
-   //dd($ad->image->getUrl(400,300));
-    return view('ad.edit',compact('ad'));
-}
+// public function edit (Ad $ad){
+//    //dd($ad->image->getUrl(400,300));
+//     return view('ad.edit',compact('ad'));
+// }
 }

@@ -28,7 +28,7 @@
                         @method('DELETE')
                         <button type="submit" class="text-decoration-none nav_letra borrar_boton me-3">{{__('Borrar')}}</button>
                       </form>
-                        <a href="{{route ('ad.edit',$ad)}} " class="text-decoration-none nav_letra mi_boton">{{__('Modificar')}}</a>
+                        {{-- <a href="{{route ('ad.edit',$ad)}} " class="text-decoration-none nav_letra mi_boton">{{__('Modificar')}}</a> --}}
                      
                      </div> 
                   </div>
