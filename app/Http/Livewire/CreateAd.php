@@ -92,7 +92,7 @@ class CreateAd extends Component
         $this->body = "";
         $this->category = "";
         $this->price = "";
-        $this->images = []; //FIXME: os faltaba limpiar este input
+        $this->images = []; //limpiamos los datos del formulario
     }
 
     public function render()

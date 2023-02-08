@@ -8,13 +8,13 @@
         "php": "^8.0.2",
         "google/cloud-vision": "^1.6",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/fortify": "^1.14",
+        "laravel/fortify": "^1.16",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
-        "laravel/scout": "^9.7",
+        "laravel/scout": "^9.8",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.1",
-        "livewire/livewire": "^2.10",
+        "livewire/livewire": "^2.11",
         "spatie/image": "^2.2"
     },
     "require-dev": {

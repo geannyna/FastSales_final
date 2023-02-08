@@ -1,5 +1,6 @@
 <x-layout>
   <x-slot name='title' class="mt-5 pt-5">FastSales - {{__('Revisor')}} Home</x-slot>
+
 @if ($ad)
 
 <div class="container-fluid">
@@ -128,7 +129,8 @@
 </div>
 </div>
 @else
-  <h3 class="text-center titulo_letra mt-5">{{__('Ya no hay anuncios para revisar,gracias.')}}</h3>
-
+<div class="d-flex justify-content-center">
+  <h3 class="titulo_letra mt-5 w-75">{{__('Ya no hay anuncios para revisar,gracias.')}}</h3>
+</div>
 @endif
 </x-layout>
