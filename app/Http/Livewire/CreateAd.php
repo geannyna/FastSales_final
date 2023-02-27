@@ -24,6 +24,7 @@ class CreateAd extends Component
     public $title;
     public $body;
     public $price;
+    public $location;
     public $category;
     public $images = [];
     public $temporary_images;
@@ -34,6 +35,7 @@ class CreateAd extends Component
         'body' => 'required|min:8',
         'category' => 'required',
         'price' => 'required|numeric',
+        'location' => 'required',
     ];
 
     protected $message = [
@@ -93,6 +95,7 @@ class CreateAd extends Component
         $this->category = "";
         $this->price = "";
         $this->images = []; //limpiamos los datos del formulario
+        $this->location = "";
     }
 
     public function render()

@@ -10,8 +10,8 @@
         </div>
         <div class="row">
             @forelse($ads as $ad)
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <div class="card mi_card" style="width: 18rem;">
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="card mi_card" style="width: 43rem;">
                   @if ($ad->images()->count() > 0)
                      <img src="{{$ad->images()->first()->getUrl(400,300)}}" class="card-img-top mi_img" alt="...">
                   @else
@@ -19,17 +19,19 @@
                   @endif
                    
                     <div class="card-body">
-                        <h5 class="card-title"> {{($ad->title)}}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">€ {{$ad->price}}</h6>
-                        <p class="card-text"> {{$ad->body}}</p>
+                        <a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark"> {{($ad->title)}}</a>
+                        <h6 class="card-subtitle mb-2 text fs-4">€ {{$ad->price}}</h6>
+                        {{-- <p class="card-text"> {{$ad->body}}</p> --}}
+                        <div>
+                            <p class="bi bi-geo-alt-fill"> {{$ad->location}}</p>
+                        </div>
                         <div class="card-subtitle mb-2">
                             <a href="{{route('category.ads',$ad->category)}}" class="text-decoration-none nav_letra">#{{$ad->category->name}}</a>
                             <i>{{$ad->created_at->format('d/m/Y')}}</i>
                         </div>
-                        <div class="card-subtitle mb-2">
-                            <small>{{ $ad->user->name }}</small>
-                        </div> 
-                        <a href="{{route("ads.show",$ad)}}" class="text-decoration-none nav_letra mi_boton">{{__('Mostrar Más')}}</a>
+                        {{-- <div class="card-subtitle mb-2">
+                            <small> Vendido por: {{ $ad->user->name }}</small>
+                        </div>  --}}
                     </div>
                 </div>
             </div>

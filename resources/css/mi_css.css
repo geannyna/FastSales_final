@@ -88,7 +88,7 @@ body{
 }
 .mi_footer{
   color:rgb(3, 3, 3);
-  background: linear-gradient(rgba(250, 234, 209, 0.667), rgb(167, 128, 64));
+  background: linear-gradient(rgba(252, 231, 196, 0.957), rgb(167, 128, 64));
 }
 .mi_nav{
   background: linear-gradient(rgba(167, 128, 64, 0.975),rgba(254, 234, 201, 0.959));
@@ -96,14 +96,20 @@ body{
 }
 .mi_card, .card_login{
   transition: 0.5s ease-in-out;
-  padding: 20px;
-  background: rgba(250, 211, 147, 0.347);
+  background: transparent;
   margin-top: 20px;
   border-color: transparent;
   border-radius: 20px;
+  cursor: pointer;
+  /* border: 3px solid rgb(224, 173, 91); */
 }
 .mi_card:hover{
   transform: scale(1.05);
+  box-shadow: 3px 3px 10px 3px rgb(202, 176, 133);
+}
+.card_login{
+  margin-top: 20px;
+  border-radius: 20px;
   box-shadow: 3px 3px 10px 3px rgb(202, 176, 133);
 }
 .mi_boton{
@@ -116,6 +122,29 @@ body{
   color: rgb(147, 105, 59);
   font-weight: bold;
   box-shadow: 2px 2px 10px 2px rgb(122, 79, 33) inset;
+}
+.boton_comprar{
+  transition: 0.5s ease-in-out;
+  border-radius: 30px;
+  border-color: transparent;
+  background: transparent;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px 0px  rgb(221, 116, 4) inset; 
+  width: 40%;
+  height: 50px;
+}
+.boton_comprar:hover{
+  width: 60%;
+}
+.letra_comprar{
+  font-family:'Lucida Grande';
+  color: rgb(221, 116, 4);
+  font-size: 22px;
+}
+.letra_comprar:hover{
+  font-family:'Lucida Grande';
+  color: rgb(221, 116, 4);
+  font-size: 25px;
 }
 .mi_boton:hover{
   transform: scale(1.05);
