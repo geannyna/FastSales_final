@@ -12,6 +12,7 @@ class PanelController extends Controller
 {
     public function index (){
         $ads = Ad::where('user_id',Auth::user()->id)
+        ->orderBy('created_at', 'desc')
         ->get();
     //dd($ads);
         return view('panel.index',compact('ads'));
