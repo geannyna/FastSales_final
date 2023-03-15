@@ -34,7 +34,7 @@
             @enderror 
         </div>
         <div class="mb-3">
-            <label for="location" class="form-label mi_letra">{{__('Ciudad:')}}</label>
+            <label for="location" class="form-label mi_letra">{{__('Localidad/Provincia:')}}</label>
             <input wire:model="location" type="text" class="form-control @error('location') is -invalid 
                 
             @enderror"> 
