@@ -10,7 +10,7 @@
         </div>
         <div class="row mt-2">
             @forelse($ads as $ad)
-            <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="col-12 col-md-3 d-flex justify-content-center">
                 <div class="card mb-5 mi_card" style="width: 43rem;">
                  <img src="{{!$ad->images()->get()->isEmpty() ? $ad->images()->first()->getUrl(400,300) : 'https://via.placeholder.com/150'}}" class="card-img-top mi_img" alt="...">
                     <div class="card-body">
