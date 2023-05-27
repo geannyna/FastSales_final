@@ -14,7 +14,6 @@ return new class extends Migration
     public function up()
     {
         Schema::table('ads', function (Blueprint $table) {
-            //
             $table->string('location')->nullable()->after('price');
         });
     }

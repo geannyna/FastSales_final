@@ -69,6 +69,15 @@
   </div>
   <hr>
   <div class="row">
+    <div class="col-md-3">
+      <b> {{__('Localidad:')}}  </b>
+    </div>
+    <div class="col-md-9">
+       {{ $ad->location }}
+    </div>
+  </div>
+  <hr>
+  <div class="row">
       <div class="col-md-3">
           <b> {{__('Precio:')}} </b>
       </div>

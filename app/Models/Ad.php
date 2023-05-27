@@ -8,7 +8,7 @@ use Laravel\Scout\Searchable;
 
 class Ad extends Model
 {
-    protected $fillable = ['title', 'body', 'price'];
+    protected $fillable = ['title', 'body', 'price', 'location'];
     use HasFactory, Searchable;
 
     public function toSearchableArray()
