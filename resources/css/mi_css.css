@@ -130,11 +130,11 @@ body{
   background: transparent;
   font-weight: bold;
   box-shadow: 0px 0px 20px 0px  rgb(221, 116, 4) inset; 
-  width: 40%;
+  width: 210px;
   height: 50px;
 }
 .boton_comprar:hover{
-  width: 60%;
+  width: 250px;
 }
 .letra_comprar{
   font-family:'Lucida Grande';
@@ -144,7 +144,7 @@ body{
 .letra_comprar:hover{
   font-family:'Lucida Grande';
   color: rgb(221, 116, 4);
-  font-size: 25px;
+  /* font-size: 23px; */
 }
 .mi_boton:hover{
   transform: scale(1.05);
