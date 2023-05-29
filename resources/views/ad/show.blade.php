@@ -26,7 +26,7 @@
     </div>
     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
       <div class="">
-        <div class="fs-2"><b>{{$ad->title}}</b></div>
+        <div class="fs-3"><b>{{$ad->title}}</b></div>
         <div class="precio_letra">{{$ad->price}} €</div>
         <div class="">{{$ad->location}} </div>
         <div><h4>{{$ad->body}}</h4></div>

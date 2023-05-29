@@ -15,7 +15,7 @@
     
 
     <div class="text-center w-100 mi_letra">
-      © 2022 Copyright: FastSales
+      Copyright © 2023 FastSales
       {{-- <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> --}}
     </div>
     </section>

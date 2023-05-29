@@ -1,7 +1,7 @@
     <nav class="navbar mi_nav navbar-expand-lg fixed-top">
         <div class="container">
           
-            <a class="navbar-brand nav_letra fs-4" href="{{ url('/') }}">
+            <a class="navbar-brand nav_letra fs-5" href="{{ url('/') }}">
              <img src="{{ asset ('/img/icono.png')}}" style="height: 2em">{{'FastSales'}}
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -59,11 +59,11 @@
 
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link nav_letra" href="{{ route('register') }}">{{ __('Registrate') }}</a>
+                                <a class="nav-link nav_letra" href="{{ route('register') }}">{{ __('Regístrate') }}</a>
                             </li>
                         @endif
                     @else
-                    <a href="{{ route ('ads.create') }}" class="text-decoration-none mt-2 nav_letra text-success fs-5">{{__('Crear anuncio')}}</a>
+                    <a href="{{ route ('ads.create') }}" class="text-decoration-none mt-2 nav_letra fs-6">{{__('Subir producto')}}</a>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle nav_letra" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}

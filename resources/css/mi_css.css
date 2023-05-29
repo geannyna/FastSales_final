@@ -1,12 +1,25 @@
+:root{
+  --color-nav: rgb(255, 247, 231);
+  --color-background: rgb(255, 247, 231);
+  --color-letra:rgb(90, 48, 3);
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: var(--color-background);
+  padding-bottom: 8%;
+  padding-top: 8%;
+}
 .nav_letra{
-  font-family:'Lucida Grande';
-  color: rgb(82, 52, 21);
-  font-size: 15px;
+  font-family:sans-serif;
+  color: var(--color-letra);
+  font-size: 17px;
 }
 .nav_letra:hover{
-  font-family: 'Lucida Grande';
   font-weight: bold;
-  color: rgb(122, 79, 33);
+  color: rgb(83, 48, 11);
 }
  .pagination ul,.pagination a.page-link{
   background-color: transparent;
@@ -47,7 +60,7 @@ a.page-link,.disabled > .page-link {
 .mi_letra{
   font-family:sans-serif;
   font-size: medium;
-  color: rgb(122, 79, 33);
+  color: var(--color-letra);
   text-decoration: none;
 }
 .precio_letra{
@@ -63,11 +76,7 @@ a.page-link,.disabled > .page-link {
 /* .container{
   background-color: rgb(30, 131, 51);
 } */
-body{
-  background-color:rgb(250, 234, 209);
-  padding-bottom: 8%;
-  padding-top: 8%;
-}
+
 .VERY_UNLIKELY{
   color: green;
 }
@@ -86,14 +95,27 @@ body{
 .UNKNOWN{
   color: grey;
 }
-.mi_footer{
+/* .mi_footer{
   color:rgb(3, 3, 3);
   background: linear-gradient(rgba(252, 231, 196, 0.957), rgb(167, 128, 64));
 }
 .mi_nav{
-  background: linear-gradient(rgba(167, 128, 64, 0.975),rgba(254, 234, 201, 0.959));
-  
-}
+  background: linear-gradient(rgba(167, 128, 64, 0.975),rgba(254, 234, 201, 0.959)); }*/
+  .mi_nav{
+    background-color: var(--color-nav);
+    border: 1px solid rgb(255, 226, 180);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+  }
+  .mi_footer{
+    background-color: var(--color-nav);
+    border: 1px solid rgb(255, 226, 180);
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+  }
+
 .mi_card, .card_login{
   transition: 0.5s ease-in-out;
   background: transparent;
