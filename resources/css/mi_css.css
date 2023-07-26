@@ -1,16 +1,20 @@
 :root{
-  --color-nav: rgb(255, 247, 231);
-  --color-background: rgb(255, 247, 231);
-  --color-letra:rgb(90, 48, 3);
+  --color-nav:  rgb(38, 38, 38);
+  --color-background: linear-gradient(white,rgb(185, 185, 185) ,white);
+  --color-letra:white;
+  --color-letra-dark: black;
 }
 *{
   padding: 0;
   margin: 0;
+
 }
+
 body{
   background-color: var(--color-background);
-  padding-bottom: 8%;
+  background-image:  linear-gradient(white,rgb(207, 207, 207) ,white);
   padding-top: 8%;
+  padding-bottom: 8%;
 }
 .nav_letra{
   font-family:sans-serif;
@@ -18,8 +22,19 @@ body{
   font-size: 17px;
 }
 .nav_letra:hover{
+  font-weight: bolder;
+  color: rgb(179, 179, 179);
+}
+
+.letra_dark{
+  color: var(--color-letra-dark);
   font-weight: bold;
-  color: rgb(83, 48, 11);
+}
+.subir_producto{
+  width: 140px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: rgb(184, 239, 127);
 }
  .pagination ul,.pagination a.page-link{
   background-color: transparent;
@@ -103,14 +118,14 @@ a.page-link,.disabled > .page-link {
   background: linear-gradient(rgba(167, 128, 64, 0.975),rgba(254, 234, 201, 0.959)); }*/
   .mi_nav{
     background-color: var(--color-nav);
-    border: 1px solid rgb(255, 226, 180);
+    border: 1px solid rgb(252, 251, 251);
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
   }
   .mi_footer{
     background-color: var(--color-nav);
-    border: 1px solid rgb(255, 226, 180);
+    border: 1px solid rgb(254, 254, 254);
     border-bottom: transparent;
     border-left: transparent;
     border-right: transparent;
@@ -127,12 +142,12 @@ a.page-link,.disabled > .page-link {
 }
 .mi_card:hover{
   transform: scale(1.05);
-  box-shadow: 3px 3px 10px 3px rgb(202, 176, 133);
+  box-shadow: 3px 3px 10px 3px rgb(78, 78, 78);
 }
 .card_login{
   margin-top: 20px;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px 3px rgb(202, 176, 133);
+  box-shadow: 3px 3px 10px 3px rgb(84, 84, 84);
 }
 .mi_boton{
   transition: 0.5s ease-in-out;
@@ -141,9 +156,9 @@ a.page-link,.disabled > .page-link {
   border-color: transparent;
   background: transparent;
   padding: 8px;
-  color: rgb(147, 105, 59);
+  color: rgb(126, 126, 126);
   font-weight: bold;
-  box-shadow: 2px 2px 10px 2px rgb(122, 79, 33) inset;
+  box-shadow: 2px 2px 10px 2px rgb(98, 98, 97) inset;
 }
 .boton_comprar{
   transition: 0.5s ease-in-out;
@@ -151,7 +166,7 @@ a.page-link,.disabled > .page-link {
   border-color: transparent;
   background: transparent;
   font-weight: bold;
-  box-shadow: 0px 0px 20px 0px  rgb(221, 116, 4) inset; 
+  box-shadow: 0px 0px 20px 0px  rgb(219, 32, 3) inset; 
   width: 210px;
   height: 50px;
 }
@@ -160,30 +175,37 @@ a.page-link,.disabled > .page-link {
 }
 .letra_comprar{
   font-family:'Lucida Grande';
-  color: rgb(221, 116, 4);
+  color: rgb(221, 69, 4);
   font-size: 22px;
 }
 .letra_comprar:hover{
   font-family:'Lucida Grande';
-  color: rgb(221, 116, 4);
+  color: rgb(189, 59, 4);
   /* font-size: 23px; */
 }
 .mi_boton:hover{
   transform: scale(1.05);
-  color: rgb(147, 105, 59);
+  color: rgb(97, 97, 97);
   font-weight: bold;
-  box-shadow: 2px 2px 10px 2px rgb(122, 79, 33) inset;
+  box-shadow: 2px 2px 10px 2px rgb(75, 75, 75) inset;
 }
 .mi_img{
   border-radius: 20px;
   background-color: transparent;
+  height: 350px;
+  width: 300px; 
+  object-fit: cover;
+  
 }
 .mi_carousel{
   height: 100%;
   width: 500px;
-  border: 5px solid rgb(105, 62, 16);
+  border: 5px solid rgb(1, 1, 1);
   border-radius: 35px;
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .page-item, .active{
   border-radius: 35px;
@@ -213,13 +235,13 @@ a.page-link,.disabled > .page-link {
 .flag-icon:hover{
   border-radius: 80%;
   -webkit-border-radius: 80%;
-  box-shadow: 0px 0px 10px 5px rgb(108, 67, 22);
-  -webkit-box-shadow: 0px 0px 10px 5px rgb(129, 80, 28);
+  box-shadow: 0px 0px 10px 5px rgb(133, 133, 133);
+  -webkit-box-shadow: 0px 0px 10px 5px rgb(178, 178, 178);
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
 }
 a.dropdown-item:hover{
-  background: rgba(122, 79, 33, 0.445);
+  background: rgba(182, 182, 182, 0.445);
 }
 .mi_icono{
   transition: 0.5s ease-in-out;
@@ -238,14 +260,14 @@ a.dropdown-item:hover{
   outline: none;
   height: 35px;
   width: 250px;
-  background-color:rgb(250, 234, 209);
+  background-color:white;
 }
 .input_group{
   position: absolute;
   cursor: pointer;
   border-radius: 10px;
   width: 300px;
-  background-color:rgb(250, 234, 209);
+  background-color:white;
 }
 
 .btn_search{
@@ -255,7 +277,7 @@ a.dropdown-item:hover{
   width: 30px;
 }
 .mi_search:focus{
-  background-color:rgb(250, 234, 209);
+  background-color:white;
 }
 
 

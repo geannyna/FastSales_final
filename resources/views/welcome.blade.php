@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             @forelse($ads as $ad)
-            <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
                 <a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark">
                 <div class="card mi_card" style="width: 43rem;">
                   @if ($ad->images()->count() > 0)
@@ -29,7 +29,7 @@
                             </a>
                         </div>
                         <div class="card-subtitle mb-2">
-                            <a href="{{route('category.ads',$ad->category)}}" class="text-decoration-none nav_letra">#{{$ad->category->name}}</a>
+                            <a href="{{route('category.ads',$ad->category)}}" class="text-decoration-none letra_dark text-dark">#{{$ad->category->name}} </a>
                             <a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark">
                             <i>{{$ad->created_at->format('d/m/Y')}}</i>
                             </a>
@@ -43,7 +43,7 @@
             </div>
             @empty
             <div class="col-12">
-                  <h2>{{__('Uyy.. parece que no hay nada')}}</h2>
+                  <h2 class="letra_dark">{{__('Uyy.. parece que no hay nada')}}</h2>
                   <a href="{{route('ads.create')}}" class="btn btn-success me-3">{{__('Vende tu primer objeto')}}</a> {{__('o')}} <a href="{{route('home')}}" class="mi_boton">{{__('Vuelve a la home')}}</a> 
               </div>
             @endforelse

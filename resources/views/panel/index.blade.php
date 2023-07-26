@@ -35,7 +35,7 @@
             </div>
             @empty
             <div class="col-12">
-                  <h2>{{__('Uyy.. parece que no hay nada')}}</h2>
+                  <h2 class="letra_dark">{{__('Uyy.. parece que no hay nada')}}</h2>
               </div>
             @endforelse
         </div>

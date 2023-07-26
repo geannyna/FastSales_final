@@ -12,12 +12,12 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle nav_letra" href="#" role="button"data-bs-toggle="dropdown"aria-expanded="false" href="{{ route('login') }}">{{ __('Categorías') }}
+                        <a class="nav-link dropdown-toggle nav_letra text-light" href="#" role="button"data-bs-toggle="dropdown"aria-expanded="false" href="{{ route('login') }}">{{ __('Categorías') }}
                      </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             
                             @foreach ($categories as $category )
-                            <li><a class="dropdown-item nav_letra" href="{{route('category.ads',$category)}}">{{__($category->name)}}</a></li>    
+                            <li><a class="dropdown-item" href="{{route('category.ads',$category)}}">{{__($category->name)}}</a></li>    
                             @endforeach
                         </ul>
                     </li>
@@ -63,9 +63,10 @@
                             </li>
                         @endif
                     @else
-                    <a href="{{ route ('ads.create') }}" class="text-decoration-none mt-2 nav_letra fs-6">{{__('Subir producto')}}</a>
+                    <a href="{{ route ('ads.create') }}" class="text-decoration-none mt-1 nav_letra fs-6"><button class="subir_producto">{{__('Subir producto')}}</button></a>
+
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle nav_letra" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link text-light dropdown-toggle nav_letra" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                                 {{-- 😊 --}}
                             </a>
@@ -79,7 +80,7 @@
                                 <ul class="list-unstyled">
                                   @if (Auth::user()->is_revisor)
                                       <li>
-                                        <a class="dropdown-item nav_letra" href="{{route('revisor.home')}} ">
+                                        <a class="dropdown-item" href="{{route('revisor.home')}} ">
                                             {{__('Revisor')}}
                                             <span class="badge rounded-pill bg-danger">
                                                 {{\App\Models\Ad::ToBeRevisionedCount()}}
@@ -88,10 +89,10 @@
                                       </li>
                                   @endif
                             <li>
-                                <a class="dropdown-item nav_letra" href="{{ route('panel.index') }}">{{ __('Mi perfil') }}</a>
+                                <a class="dropdown-item" href="{{ route('panel.index') }}">{{ __('Mi perfil') }}</a>
                             </li>     
                             <li>
-                                <a class="dropdown-item nav_letra" href="#" id="logoutBtn">{{ __('Salir') }}
+                                <a class="dropdown-item" href="#" id="logoutBtn">{{ __('Salir') }}
                                 </a>
                             </li>   
                             </div>

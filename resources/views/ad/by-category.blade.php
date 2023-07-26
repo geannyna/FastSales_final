@@ -18,7 +18,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">€ {{$ad->price}}</h6>
                         <p class="card-text"> {{$ad->body}}</p>
                         <div class="card-subtitle mb-2">
-                            <a href="{{route('category.ads',$ad->category)}}" class="text-decoration-none nav_letra">#{{__($ad->category->name)}}</a>
+                            <a href="{{route('category.ads',$ad->category)}}" class="text-decoration-none letra_dark">#{{__($ad->category->name)}}</a>
                             <i>{{$ad->created_at->format('d/m/Y')}}</i>
                         </div>
                         <div class="card-subtitle mb-2">
@@ -30,7 +30,7 @@
             </div>
             @empty
             <div class="col-12">
-                  <p class="mi_letra fs-3">{{__('Uyy.. parece que no hay nada')}}</p>
+                  <p class="letra_dark fs-3">{{__('Uyy.. parece que no hay nada')}}</p>
                   <a href="{{route('ads.create')}}" class="btn btn-success me-3">{{__('Vende tu primer objeto ')}}</a>{{__(' o')}} <a href="{{route('home')}}" class="btn btn-primary ms-3">{{__('Vuelve a la home')}}</a> 
               </div>
             @endforelse
