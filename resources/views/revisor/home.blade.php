@@ -19,7 +19,7 @@
           @forelse ($ad->images as $image )
           <div class="row mb-2">
               <div class="col-md-4">
-                <img src="{{$image->getUrl(400,300)}}" class="img-fluid" alt="...">
+                <img src="{{$image->getUrl(400,300)}}" class="img-fluid mi_img" alt="...">
               </div>
               <div class="col-md-8">
                 Adult : <i class="bi bi-circle-fill {{$image->adult}}"></i>[{{$image->adult}}] <br>

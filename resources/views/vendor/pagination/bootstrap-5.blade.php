@@ -30,7 +30,7 @@
 
         <div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between me-5">
             <div>
-                <p class="pag_left ms-5">
+                <p class="pag_left letra_dark ms-5">
                     {!! __('Showing') !!}
                     <span class="fw-semibold">{{ $paginator->firstItem() }}</span>
                     {!! __('to') !!}

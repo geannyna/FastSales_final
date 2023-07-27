@@ -17,7 +17,7 @@
         @csrf 
         <div class="mb-3"> 
             <h4 class="card-title titulo_letra text-center">{{__('Nuevo anuncio')}}</h4>
-            <label for="title" class="form-label mi_letra">{{__('Titulo:')}}</label>
+            <label for="title" class="form-label letra_dark">{{__('Titulo:')}}</label>
             <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror"> 
             @error('title')
             {{__($message)}}
@@ -25,7 +25,7 @@
         </div>
        
         <div class="mb-3">
-            <label for="price" class="form-label mi_letra">{{__('Precio:')}}</label>
+            <label for="price" class="form-label letra_dark">{{__('Precio:')}}</label>
             <input wire:model="price" type="number" class="form-control @error('price') is-invalid 
                 
             @enderror"> 
@@ -34,7 +34,7 @@
             @enderror 
         </div>
         <div class="mb-3">
-            <label for="location" class="form-label mi_letra">{{__('Localidad/Provincia:')}}</label>
+            <label for="location" class="form-label letra_dark">{{__('Localidad/Provincia:')}}</label>
             <input wire:model="location" type="text" class="form-control @error('location') is-invalid 
                 
             @enderror"> 
@@ -44,8 +44,8 @@
         </div>
 
         <div class="mb-3">
-            <label for="category" class="form-label mi_letra">{{__('Categoria:')}}</label>
-            <select wire:model.defer ="category" class="form-control mi_letra">
+            <label for="category" class="form-label letra_dark">{{__('Categoria:')}}</label>
+            <select wire:model.defer ="category" class="form-control text-secondary">
                 <option value="">{{__('Seleccionar categoría')}}</option>
                 @foreach ($categories as $category)
                     <option value="{{$category->id}}">{{__($category->name)}}</option>
@@ -54,7 +54,7 @@
         </div>
         
         <div class="mb-3">
-            <label for="body" class="form-label mi_letra">{{__('Descripcion:')}}</label>
+            <label for="body" class="form-label letra_dark">{{__('Descripcion:')}}</label>
             <textarea wire:model="body" rows="5" class="form-control @error('body') is-invalid               
             @enderror"></textarea>  
             @error('body')

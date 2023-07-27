@@ -12,7 +12,7 @@
             @forelse($ads as $ad)
             <div class="col-12 col-md-4 d-flex justify-content-center">
                 <a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark">
-                <div class="card mi_card" style="width: 43rem;">
+                <div class="card mi_card" style="width: 22rem;">
                   @if ($ad->images()->count() > 0)
                      <img src="{{$ad->images()->first()->getUrl(400,300)}}" class="card-img-top mi_img" alt="...">
                   @else
