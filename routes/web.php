@@ -7,7 +7,7 @@ use App\Http\Controllers\PanelController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\RevisorController;
-
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,11 @@ use App\Http\Controllers\RevisorController;
 Route::get('/', [PublicController::class, 'index'])->name('home');
 
 Route::get('/category/{category:name}/ads', [PublicController::class, 'adsByCategory'])->name('category.ads');
+
+// rutas para pasarela de pago
+
+Route::get('/show/{ad}', [PaymentController::class, 'showCheckout'])->name('payment.show');
+Route::post('/process', [PaymentController::class, 'processPayment'])->name('payment.process');
 
 Auth::routes();
 

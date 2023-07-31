@@ -37,10 +37,11 @@
          <b>{{__('Categoria: ')}}</b> {{__($ad->category->name)}}</div>
 
         <div class="boton_comprar text-center p-2">
-            <a href="#" class="text-decoration-none letra_comprar">{{__('Comprar ahora')}}</a>
+            <a href="{{ route('payment.show', $ad->id) }}" class="text-decoration-none letra_comprar">{{__('Compralo ya')}}</a>
         </div>
       </div>
     </div>
   </div>
-  
+
   </x-layout>
+

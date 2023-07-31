@@ -33,10 +33,14 @@ body{
 .subir_producto{
   width: 150px;
   height: 35px;
-  font-weight: bolder;
-  font-size: large;
+  font-weight: bold;
+  font-size: medium;
   border-radius: 30px;
   background-color: rgb(184, 239, 127);
+}
+.subir_producto:hover{
+  cursor: pointer;
+  font-size: large;
 }
  .pagination ul,.pagination a.page-link{
   background-color: transparent;
@@ -282,9 +286,30 @@ a.dropdown-item:hover{
 .mi_search:focus{
   background-color:white;
 }
+.mi_pay{
+  transition: 0.5s ease-in-out;
+  width: 310px;
+  border-radius: 30px;
+  border-color: transparent;
+  background: transparent;
+  padding: 8px;
+  color: rgb(163, 68, 4);
+  font-weight: bold;
+  box-shadow: 2px 2px 10px 2px rgb(210, 70, 19) inset;
+}
 
+.container_pay {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas con ancho flexible */
+  }
 
-
-
-
+.select_1, .select_2{
+  width: 80px;
+}
+.text_pay{
+  font-size:xx-small;
+}
+.form-control{
+  width: 250px;
+}
 
