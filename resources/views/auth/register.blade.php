@@ -7,7 +7,7 @@
             <div class="card card_login">
                 <div class="card-header letra_dark">{{ __('Regístrate') }}</div>
 
-                <div class="card-body">
+                <div class="p-3">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 

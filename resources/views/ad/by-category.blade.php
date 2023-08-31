@@ -13,7 +13,7 @@
             <div class="col-12 col-md-4 d-flex justify-content-center">
                 <div class="card  mi_card" style="width: 22rem;">
                  <img src="{{!$ad->images()->get()->isEmpty() ? $ad->images()->first()->getUrl(400,300) : 'https://via.placeholder.com/150'}}" class="card-img-top mi_img" alt="...">
-                    <div class="card-body">
+                    <div class="">
                         <h5 class="card-title"> {{$ad->title}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">€ {{$ad->price}}</h6>
                         {{-- <p class="card-text"> {{$ad->body}}</p> --}}

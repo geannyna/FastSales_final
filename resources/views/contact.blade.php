@@ -3,10 +3,11 @@
   <x-slot name='title'>{{('FastSales')}}</x-slot>
   
   <div class="container-fluid mt-5" style="width: 80%;">
+    <h4 class="card-title titulo_letra text-center mb-4">{{__('Contacta con nosotros')}}</h4>
     <div class="card-body">
 
-    <h4 class="card-title titulo_letra text-center">{{__('Contacta con nosotros')}}</h4>
-    <form action="" method="post">
+    
+    <form method="post" class="mi_form">
         @csrf   {{--  componente de seguridad cuando tenemos post, hay que ponerlo siempre para el post --}}
       <div class="mb-3">
         <label for="name" class="form-label letra_dark">Tu nombre</label>

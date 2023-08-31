@@ -19,9 +19,9 @@
                   <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
                   @endif
                 </a>
-                    <div class="card-body">
-                        <a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark"> {{($ad->title)}}</a>
-                        <h6 class="card-subtitle mb-2 text fs-4">€<a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark"> {{$ad->price}}</a></h6>
+                    <div class="">
+                        <a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark fs-5"> {{($ad->title)}}</a>
+                        <h6 class="card-subtitle mb-2 text fs-2">€<a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark"> {{$ad->price}}</a></h6>
                         {{-- <p class="card-text"> {{$ad->body}}</p> --}}
                         <div>
                             <a href="{{route("ads.show",$ad)}}" class="card-title text-decoration-none text-dark">
